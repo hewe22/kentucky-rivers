@@ -15,7 +15,8 @@
 ***
 
 ### Data Source
-All data for this project was sourced from the [KyGovMaps Open Data Portal](https://opengisdata.ky.gov/). 
+All data for this project was sourced from the [KyGovMaps Open Data Portal](https://opengisdata.ky.gov/).
+
 Data for major rivers and waterways in Kentucky - [Link to data source](https://opengisdata.ky.gov/datasets/kygeonet::kentucky-rivers/explore?location=37.281171%2C-85.984703%2C6)
 
 Data for minor streams and tributaries in Kentucky - [Link to data source](https://opengisdata.ky.gov/datasets/25811a405483466092fe81df34a26532_0/explore?location=37.802965%2C-85.817228%2C7)
@@ -41,15 +42,19 @@ After adding the river, stream, and basin management boundaries layers to the ma
 The Kentucky rivers data extends some of the rivers outside of the state's boundary. To remove the unnecessary vectors, I utilized the "clip" feature in geoprocessing tools. By using the rivers layer as the input layer and a polygon of Kentucky's state boundary, the result is a layer that contains only line data within the bounds of the state.
 ![Parameters of "clip" geoprocessing tool](graphics\vector-overlay-clip.png)
 <img width="853" height="691" alt="image" src="https://github.com/user-attachments/assets/4b7c8b4e-39d0-4ee5-a970-fa88215d57d8" />
+
 For the streams data, I utilized "scale dependent visibility" to avoid showing all of the data when zoomed out. At a map scale of 1:250000, all streams data appears.
 ![Settings for scale dependent visibility](graphics\scale-dependent-visibility.png)
 <img width="1059" height="871" alt="image" src="https://github.com/user-attachments/assets/43c633ff-6b0f-414e-b176-62bb0760554c" />
+
 For the final layer, basin management areas, it was necessary to distinguish the different areas by altering the style. Under "symbology", I used the "categorized" option to give each management area a different color. I also set the opacity to 50% so that the basemap could be seen underneath it.
 ![Settings for categorized symbology](graphics\categorized-symbology.png)
 <img width="1062" height="879" alt="image" src="https://github.com/user-attachments/assets/16219456-694d-46f8-bfc5-6c33c6227f1a" />
+
 The labels for major kentucky waterways and waterbodies have scale dependent visibility, with labels appearing at a minimum zoom of 1:250,000.
 ![Settings for scale dependent visibility of labels](graphics\labels-scale-dependent-visibility.png)
 <img width="1060" height="877" alt="image" src="https://github.com/user-attachments/assets/6d5310ba-eabd-46f0-b5f7-0242257affef" />
+
 To avoid a map full of minor lake labels, set the "suppress labeling of features smaller than" option to 3.0mm.
 ![Map view of lakes labels without adjust label visibility](graphics\non-filtered-lake-labels.png)
 <img width="1483" height="767" alt="image" src="https://github.com/user-attachments/assets/de701c59-df67-4fff-9b11-c415871970c6" />
@@ -61,4 +66,4 @@ As for my mapmaking journey, I learned about using state versus national data. I
 
 ## Final Project Link
 
-Please view the [final map online](index.html)
+Please view the [final map online](https://hewe22.github.io/kentucky-rivers)
