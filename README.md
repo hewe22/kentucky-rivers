@@ -61,4 +61,4 @@ As for my mapmaking journey, I learned about using state versus national data. I
 
 ## Final Project Link
 
-Please view the [final map online](www.github...)
+Please view the [final map online](index.html)
