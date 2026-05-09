@@ -54,7 +54,6 @@ To avoid a map full of minor lake labels, set the "suppress labeling of features
 ![Map view of lakes labels without adjust label visibility](graphics\non-filtered-lake-labels.png)
 <img width="1483" height="767" alt="image" src="https://github.com/user-attachments/assets/de701c59-df67-4fff-9b11-c415871970c6" />
 
-
 ### Map summary
 
 The key findings from my map are that water connects Kentucky. No matter where you go in the state, you will find water. It is an invaluable resource that we often take for granted here in Kentucky. As we have witnessed recent droughts across the country, however, it brings into focus just how important our waterways are. Knowing where your water comes from and how it is protected is vital to its long term safety. 
